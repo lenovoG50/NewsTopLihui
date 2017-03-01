@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/my_page_background">
+
+        <RelativeLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/qqlogin"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_qqlogin" />
+
+            <ImageView
+                android:id="@+id/phonelogin"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/qqlogin"
+                android:src="@drawable/icon_phonelogin" />
+
+            <ImageView
+                android:id="@+id/sinalogin"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/qqlogin"
+                android:src="@drawable/icon_weixinlogins" />
+
+            <ImageView
+                android:id="@+id/arrowcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/sinalogin"
+                android:src="@mipmap/arrow_all_normal" />
+
+            <TextView
+                android:id="@+id/textshow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="登录推荐更精彩"
+                android:textColor="#9c9c9c" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/style_mineicon"
+                android:src="@mipmap/seclect_item_history" />
+
+            <TextView
+                style="@style/style_minetext"
+                android:text="历史" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/collect"
+            style="@style/style_minelayout"
+            android:layout_marginLeft="40dp">
+
+            <ImageView
+                style="@style/style_mineicon"
+                android:src="@drawable/icon_collect_mine" />
+
+            <TextView
+                style="@style/style_minetext"
+                android:text="收藏" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/night"
+            style="@style/style_minelayout"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp">
+
+            <ImageView
+                style="@style/style_mineicon"
+                android:src="@mipmap/nighticon_profile" />
+
+            <TextView
+                style="@style/style_minetext"
+                android:text="夜间" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/alerts"
+        style="@style/style_minerelativelayout"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            style="@style/style_minetext1"
+            android:text="消息通知" />
+
+        <ImageView style="@style/style_mineimage" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topshop"
+        style="@style/style_minerelativelayout"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            style="@style/style_minetext1"
+            android:text="头条商城" />
+
+        <ImageView style="@style/style_mineimage" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f4f5f6"></View>
+
+    <RelativeLayout
+        android:id="@+id/jingdong"
+        style="@style/style_minerelativelayout">
+
+        <TextView
+            style="@style/style_minetext1"
+            android:text="京东特供" />
+
+        <ImageView style="@style/style_mineimage" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shared"
+        style="@style/style_minerelativelayout"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            style="@style/style_minetext1"
+            android:text="我要爆料" />
+
+        <ImageView style="@style/style_mineimage" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f4f5f6"></View>
+
+    <RelativeLayout
+        android:id="@+id/feedback"
+        style="@style/style_minerelativelayout">
+
+        <TextView
+            style="@style/style_minetext1"
+            android:text="用户反馈" />
+
+        <ImageView style="@style/style_mineimage" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f4f5f6"></View>
+
+    <RelativeLayout
+        android:id="@+id/setting"
+        style="@style/style_minerelativelayout">
+
+        <TextView
+            style="@style/style_minetext1"
+            android:text="系统设置" />
+
+        <ImageView style="@style/style_mineimage" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f4f5f6"></View>
+</LinearLayout>

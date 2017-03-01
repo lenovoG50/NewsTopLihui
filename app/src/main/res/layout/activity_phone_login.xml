@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_phone_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/add_channels_close" />
+
+    <TextView
+        android:id="@+id/text1"
+        style="@style/style_phonelogin"
+        android:layout_below="@+id/cancel"
+        android:layout_marginTop="30dp"
+        android:text="登录后保存阅读习惯" />
+
+    <TextView
+        android:id="@+id/text2"
+        style="@style/style_phonelogin"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="5dp"
+        android:text="打造你的专属头条" />
+
+    <LinearLayout
+        android:id="@+id/phoneedit"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:hint="请输入手机号码" />
+
+        <TextView
+            android:id="@+id/sendpass"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="发送验证码"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/phonepass"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/phoneedit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray"
+        android:hint="     请输入验证码" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phonepass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="未注册手机验证后自动注册" />
+
+    <FrameLayout
+        android:id="@+id/enter"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/text3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#f00">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="进入头条"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/phonepassenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="账号密码登录"
+        android:textColor="@drawable/textcolor_phonelogin" />
+
+
+    <TextView
+        android:id="@+id/loginmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phonepassenter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="更多登录方式" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/loginmore"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/weixinlogins"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_weixinlogin" />
+
+        <ImageView
+            android:id="@+id/sinalogins"
+            style="@style/style_login"
+            android:layout_toLeftOf="@+id/weixinlogins"
+            android:background="@drawable/icon_sinalogins" />
+
+        <ImageView
+            android:id="@+id/qqlogins"
+            style="@style/style_login"
+            android:layout_toLeftOf="@+id/sinalogins"
+            android:background="@drawable/icon_qqlogins" />
+
+        <ImageView
+            android:id="@+id/weibologins"
+            style="@style/style_logins"
+            android:layout_toRightOf="@+id/weixinlogins"
+            android:background="@drawable/icon_weibologins" />
+
+        <ImageView
+            android:id="@+id/renrenlogins"
+            style="@style/style_logins"
+            android:layout_toRightOf="@+id/weibologins"
+            android:background="@drawable/icon_renrenlogins" />
+
+    </RelativeLayout>
+</RelativeLayout>
