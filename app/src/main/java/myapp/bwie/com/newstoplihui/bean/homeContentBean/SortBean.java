@@ -15,6 +15,17 @@ public class SortBean {
     private String ptime;
     private String tname;
     private String url;
+    private String imgsrc;
+
+    public String getImgsrc() {
+        return imgsrc;
+    }
+
+    public void setImgsrc(String imgsrc) {
+        this.imgsrc = imgsrc;
+    }
+
+    private List<Img> imgextra;
 
     public String getUrl() {
         return url;
@@ -23,8 +34,6 @@ public class SortBean {
     public void setUrl(String url) {
         this.url = url;
     }
-
-    private List<Img> imgextra;
 
 
     public List<Img> getImgextra() {

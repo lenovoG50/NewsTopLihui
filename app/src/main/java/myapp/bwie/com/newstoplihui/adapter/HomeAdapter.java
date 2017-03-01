@@ -74,6 +74,7 @@ public class HomeAdapter extends BaseAdapter {
                     vh2.title = (TextView) convertView.findViewById(R.id.title);
                     vh2.source = (TextView) convertView.findViewById(R.id.source);
                     vh2.ptime = (TextView) convertView.findViewById(R.id.ptime);
+                    vh2.img = (ImageView) convertView.findViewById(R.id.img);
                     convertView.setTag(vh2);
                     break;
 
@@ -104,7 +105,7 @@ public class HomeAdapter extends BaseAdapter {
                 vh2.title.setText(getItem(position).getTitle());
                 vh2.source.setText(getItem(position).getSource());
                 vh2.ptime.setText(getItem(position).getPtime());
-
+                ImageLoader.getInstance().displayImage(getItem(position).getImgsrc(), vh2.img, options);
                 break;
 
         }
@@ -138,6 +139,7 @@ public class HomeAdapter extends BaseAdapter {
     class ViewHolder2 {
 
         TextView title, source, ptime;
+        ImageView img;
 
     }
 
